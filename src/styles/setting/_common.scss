@@ -1,0 +1,110 @@
+/* Welcome to common
+ *
+ * In this file you should write your For common
+ *
+/**
+ * Content Start
+ *
+*/
+
+body{
+  background-color: $bodyBackgroundColor;
+  font-family: $baseFontFamily;
+}
+
+* {
+  @include box-sizing();
+}
+
+.container{
+  width: $container;
+}
+
+// circle
+// --------------------------------------------------
+.circle{
+  @include border-radius(9999999px);
+}
+
+// display
+// --------------------------------------------------
+.row{
+  @include row();
+  .col{
+    @include col();
+  }
+  .col.fixed{
+    @include fixed();
+  }
+}
+
+// text-align
+// --------------------------------------------------
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// display
+// --------------------------------------------------
+.fn-show {
+  display: block;
+}
+
+.fn-hide {
+  display: none;
+}
+
+// float
+// --------------------------------------------------
+.fn-left {
+  float: left;
+}
+
+.fn-right {
+  float: right;
+}
+
+.fn-clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0
+}
+
+.fn-clear {
+  zoom: 1
+}
+
+//
+// --------------------------------------------------
+.fn-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+//color
+// --------------------------------------------------
+.red {
+  color: #FF5E5F;
+}
+
+.blue {
+  color: #00AAEE;
+}
+
+// font
+// ---------------------------------------------------
+.font-Yahei{
+  font-family: "Microsoft Yahei";//微软雅黑
+}
